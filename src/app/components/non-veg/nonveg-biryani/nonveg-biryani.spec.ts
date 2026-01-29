@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VegStarters } from './veg-starters';
+import { NonvegBiryani } from './nonveg-biryani';
 
-describe('VegStarters', () => {
-  let component: VegStarters;
-  let fixture: ComponentFixture<VegStarters>;
+describe('NonvegBiryani', () => {
+  let component: NonvegBiryani;
+  let fixture: ComponentFixture<NonvegBiryani>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [VegStarters]
+      imports: [NonvegBiryani]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(VegStarters);
+    fixture = TestBed.createComponent(NonvegBiryani);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

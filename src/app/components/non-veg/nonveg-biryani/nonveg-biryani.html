@@ -5,7 +5,7 @@
     <div style="position: absolute; top: 20px; left: 20px;">
       <a routerLink="/menu" style="color: white; text-decoration: none; font-weight: bold; background: rgba(0,0,0,0.2); padding: 8px 16px; border-radius: 20px;">← Back</a>
     </div>
-    <h1>Vegetarian Delights</h1>
+    <h1>Non-Vegetarian Delights</h1>
     <div class="toggle-buttons">
       <button 
         class="toggle-btn" 
@@ -21,9 +21,9 @@
       </button>
       <button 
         class="toggle-btn" 
-        [class.active]="activeCategory === 'friedrice'"
-        (click)="setCategory('friedrice')">
-        Fried Rice
+        [class.active]="activeCategory === 'maincourse'"
+        (click)="setCategory('maincourse')">
+        Main Course
       </button>
     </div>
   </div>

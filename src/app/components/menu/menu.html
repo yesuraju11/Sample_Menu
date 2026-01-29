@@ -1,0 +1,44 @@
+<div class="menu-page">
+  <!-- Top Navigation Bar -->
+   <div class="header-section">
+    <div style="position: absolute; top: 20px; left: 20px;">
+      <a routerLink="/home" style="color: white; text-decoration: none; font-weight: bold; background: rgba(0,0,0,0.2); padding: 8px 16px; border-radius: 20px;">← Back</a>
+    </div>
+  <div class="menu-header">
+    
+    <h1>Explore Our Menu</h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Search for food..." (input)="searchItems($event.target.value)">
+    </div>
+    <div class="category-nav">
+      <!-- Veg Button links to the Veg Biryani page -->
+      <button class="nav-btn veg-btn" routerLink="/veg-biryani">
+        <span class="icon">🥬</span> Veg Delights
+      </button>
+      
+      <!-- Non-Veg Button -->
+      <button class="nav-btn non-veg-btn" routerLink="/nonveg-biryani">
+        <span class="icon">🍗</span> Non-Veg Feast
+      </button>
+    </div>
+  </div>
+
+  <!-- Mixed Food Items Grid -->
+  <div class="food-container">
+    <div class="food-card" *ngFor="let item of filteredFoodItems">
+      <div class="card-image">
+        <img [src]="item.image" [alt]="item.name">
+        <span class="badge" [ngClass]="item.type === 'Veg' ? 'badge-veg' : 'badge-nonveg'">
+          {{ item.type }}
+        </span>
+      </div>
+      <div class="card-content">
+        <h3>{{ item.name }}</h3>
+        <div class="card-footer">
+          <span class="price">{{ item.price }}</span>
+          <button class="order-btn">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

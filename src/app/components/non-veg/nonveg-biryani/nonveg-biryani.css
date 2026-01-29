@@ -3,7 +3,7 @@
 :host {
   display: block;
   min-height: 100vh;
-  background-color: #f0fdf4; /* Light Green Background */
+  background-color: #fff5f5; /* Light Red Background */
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -14,7 +14,7 @@
 /* Header Section */
 .header-section {
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-              url('https://images.unsplash.com/photo-1633945274405-b6c8069047b0?q=80&w=1920&auto=format&fit=crop');
+              url('https://images.unsplash.com/photo-1599043513900-ed6fe01d3833?q=80&w=1920&auto=format&fit=crop');
   background-size: cover;
   background-position: center;
   padding: 4rem 1rem;
@@ -58,9 +58,9 @@
 }
 
 .toggle-btn.active {
-  background-color: #2ecc71; /* Bright Green */
+  background-color: #e74c3c; /* Bright Red */
   color: white;
-  box-shadow: 0 4px 10px rgba(46, 204, 113, 0.4);
+  box-shadow: 0 4px 10px rgba(231, 76, 60, 0.4);
 }
 
 /* Items Grid */
@@ -86,7 +86,7 @@
 .food-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 25px rgba(0,0,0,0.1);
-  border-color: #2ecc71;
+  border-color: #e74c3c;
 }
 
 .card-img-wrapper {
@@ -132,7 +132,7 @@
 .price {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #2ecc71;
+  color: #e74c3c;
 }
 
 .add-btn {
@@ -147,7 +147,7 @@
 }
 
 .add-btn:hover {
-  background-color: #2ecc71;
+  background-color: #e74c3c;
 }
 
 @keyframes fadeIn {
